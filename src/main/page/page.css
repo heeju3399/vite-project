@@ -1,0 +1,39 @@
+.carousel-container {
+    width: 100%;
+    height: 85vh;
+    overflow: hidden;
+    position: relative;
+}
+
+.carousel-item {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: transform 0.3s ease-out;
+}
+
+.carousel-item.active {
+    transform: translateY(0);
+}
+
+.carousel-item.prev {
+    transform: translateY(-100%);
+}
+
+.carousel-item.next {
+    transform: translateY(100%);
+}
+
+/* 이게 터치 슬라이더가 먹는 칸임 */
+.touch-overlay {
+
+    position: absolute;
+    top: 50%;
+
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+}
