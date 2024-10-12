@@ -1,6 +1,7 @@
 .carousel-container {
     width: 100%;
     height: 85vh;
+
     overflow: hidden;
     position: relative;
 }
@@ -16,6 +17,7 @@
 
 .carousel-item.active {
     transform: translateY(0);
+
 }
 
 .carousel-item.prev {
@@ -30,10 +32,9 @@
 .touch-overlay {
 
     position: absolute;
-    top: 50%;
-
+    top: 0;
     left: 0;
     width: 100%;
-    height: 100%;
+    height: 80%;
     z-index: 10;
 }

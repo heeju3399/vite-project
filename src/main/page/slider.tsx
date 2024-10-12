@@ -2,6 +2,7 @@ import * as React from 'react';
 import Box from '@mui/material/Box';
 import Typography from '@mui/material/Typography';
 import Slider from '@mui/material/Slider';
+import Divider from '@mui/material/Divider';
 
 const marks = [
     {
@@ -56,12 +57,13 @@ export default function NonLinearSlider2() {
     };
 
     return (
-        <Box sx={{ width: 250, m: 2, display: 'block', height: 500 }}>
-            <Typography id="non-linear-slider" gutterBottom sx={{ height: 500 }}>
+        <Box sx={{ p: 2, display: 'flex', flexDirection: 'column', justifyContent: 'space-between', height: '80vh', border: '1px solid green' }}>
+            <Typography id="non-linear-slider" gutterBottom sx={{ border: '1px solid red', }} >
                 앞에서! : {valueLabelFormat(value)}
             </Typography>
+            <Divider />
             <Slider
-                sx={{ color: 'blue' }}
+                sx={{ color: 'blue', border: '1px solid blue', p: '10px' }}
                 value={value}
                 min={0}
                 step={1}
