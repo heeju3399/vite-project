@@ -7,7 +7,7 @@ import Divider from '@mui/material/Divider';
 const marks = [
     {
         value: 0,
-        label: '0',
+        label: <div>0</div>,
     },
     {
         value: 20,
@@ -34,6 +34,7 @@ const marks = [
 function valueLabelFormat(value: number) {
     // // 앞에서 나옴!!!!
     let result = '';
+    
     let data2 = `가나다라마바사아자차카타파하`;
 
     let vv = data2.length / 100;
@@ -42,6 +43,7 @@ function valueLabelFormat(value: number) {
     const data99 = data2;
     result = data99.substring(0, rr).toString(); // 시작과 끝을 지정해서 보여주기
     return result;
+    
 }
 
 
@@ -63,17 +65,12 @@ export default function NonLinearSlider2() {
             </Typography>
             <Divider />
             <Slider
-                sx={{ color: 'blue', border: '1px solid blue', p: '10px' }}
+                sx={{ color: 'blue', border: '1px solid blue', p: '10px', textDecorationColor:'red' }}
                 value={value}
                 min={0}
-                step={1}
-                max={100}
-                // scale={calculateValue}
-                //getAriaValueText={valueLabelFormat}
-                //valueLabelFormat={valueLabelFormat}
-                marks={marks}
-
-                onChange={handleChange}
+                step={5}
+                max={100}                
+                        onChange={handleChange}
                 valueLabelDisplay="off"
                 aria-labelledby="non-linear-slider"
             />

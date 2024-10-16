@@ -6,7 +6,7 @@
   height: 100%;
 
   --background-color: white;
-  --text-color: #5d00ff;
+  --text-color: black;
   --primary-color: #ff3b3b;
 }
 
@@ -26,13 +26,7 @@ html {
   transition: all 1s;
 }
 
-.color-primary {
-  color: var(--primary-color);
-}
 
-:root.dark .color-primary {
-  filter: brightness(150%);
-}
 
 /* :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
