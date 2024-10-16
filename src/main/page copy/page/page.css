@@ -1,34 +1,3 @@
-.read-carousel-container {
-    width: 100%;
-    height: 85vh;
-
-    overflow: hidden;
-    position: relative;
-}
-
-.read-carousel-item {
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    transition: transform 0.3s ease-out;
-}
-
-
-.read-carousel-item.active {
-    transform: translateY(0);
-}
-
-.read-carousel-item.prev {
-    transform: translateY(-100%);
-}
-
-.read-carousel-item.next {
-    transform: translateY(100%);
-}
-/* ///////////////////////////////////// */
-
 .carousel-container {
     width: 100%;
     height: 85vh;
@@ -48,6 +17,7 @@
 
 .carousel-item.active {
     transform: translateY(0);
+
 }
 
 .carousel-item.prev {
@@ -60,10 +30,11 @@
 
 /* 이게 터치 슬라이더가 먹는 칸임 */
 .touch-overlay {
+
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
-    height: 100%;
+    height: 80%;
     z-index: 10;
 }
